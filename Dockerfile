@@ -45,7 +45,7 @@ RUN curl -O http://www.princexml.com/download/prince_10r3-1_ubuntu14.04_amd64.de
     && apt-get -f install \ 
     && rm -f prince_10r3-1_ubuntu14.04_amd64.deb
 
-RUN git clone -b process-timeout git@github.com:havlicek/easybook.git /easybook
+RUN git clone -b process-timeout https://github.com/havlicek/easybook.git /easybook
 
 # install wget
 RUN echo "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) main universe" > /etc/apt/sources.list
