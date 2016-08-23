@@ -59,6 +59,8 @@ RUN rm -r /tmp/*
 
 WORKDIR /easybook
 
+RUN composer install
+
 VOLUME ["/easybook/doc"]
 
 VOLUME ["/easybook/app/Resources"]
